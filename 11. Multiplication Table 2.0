@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class multiplicationTable2 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int num = Integer.parseInt(input.nextLine());
+        int multiplicator = Integer.parseInt(input.nextLine());
+        if (multiplicator > 10){
+            int sum = num * multiplicator;
+            System.out.printf("%d X %d = %d", num, multiplicator, sum);
+        }else{
+            for (int i = multiplicator; i <= 10; i++) {
+                int sum = num * i;
+                System.out.printf("%d X %d = %d%n", num, i , sum);
+            }
+        }
+    }
+}
