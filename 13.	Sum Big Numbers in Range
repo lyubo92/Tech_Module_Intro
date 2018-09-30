@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class sumBigNumberInRange {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int sum = 0;
+        int first = Integer.parseInt(sc.nextLine());
+        int second = Integer.parseInt(sc.nextLine());
+        for (int i = first; i <= second; i++) {
+            sum += i;
+        }
+        System.out.println(sum);
+    }
+}
