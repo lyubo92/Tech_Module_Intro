@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class theatrePromotion {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String dayType = input.nextLine();
+        int age = Integer.parseInt(input.nextLine());
+        if (age >= 0 && age <= 18){
+            if (dayType.equals("Weekday")){
+                System.out.println("12$");
+            }else if (dayType.equals("Weekend")){
+                System.out.println("15$");
+            }else if (dayType.equals("Holiday")){
+                System.out.println("5$");
+            }
+        }else if (age > 18 && age <= 64){
+            if (dayType.equals("Weekday")){
+                System.out.println("18$");
+            }else if (dayType.equals("Weekend")){
+                System.out.println("20$");
+            }else if (dayType.equals("Holiday")){
+                System.out.println("12$");
+            }
+        }else if (age > 64 && age <= 122){
+            if (dayType.equals("Weekday")){
+                System.out.println("12$");
+            }else if (dayType.equals("Weekend")){
+                System.out.println("15$");
+            }else if (dayType.equals("Holiday")){
+                System.out.println("10$");
+            }
+        }else{
+            System.out.println("Error!");
+        }
+    }
+}
